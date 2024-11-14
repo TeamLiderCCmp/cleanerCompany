@@ -1800,7 +1800,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #d64541a3);
   background-image: -o-linear-gradient(left, #ffffff, #d64541a3);
   background-image: linear-gradient(to right, #ffffff, #d64541a3);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1817,7 +1817,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #f5d76e59);
   background-image: -o-linear-gradient(left, #ffffff, #f5d76e59);
   background-image: linear-gradient(to right, #ffffff, #f5d76e59);
-  font-size: 18px;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1834,7 +1834,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #00b16aa3);
   background-image: -o-linear-gradient(left, #ffffff, #00b16aa3);
   background-image: linear-gradient(to right, #ffffff, #00b16aa3);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1851,7 +1851,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #f27935a3);
   background-image: -o-linear-gradient(left, #ffffff, #f27935a3);
   background-image: linear-gradient(to right, #ffffff, #f27935a3);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1868,7 +1868,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #35d6f2);
   background-image: -o-linear-gradient(left, #ffffff, #35d6f2);
   background-image: linear-gradient(to right, #ffffff, #35d6f2);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1885,7 +1885,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #35f2c3);
   background-image: -o-linear-gradient(left, #ffffff, #35f2c3);
   background-image: linear-gradient(to right, #ffffff, #35f2c3);
-  font-size: 18px;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1902,7 +1902,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #095239);
   background-image: -o-linear-gradient(left, #ffffff, #095239);
   background-image: linear-gradient(to right, #ffffff, #095239);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1919,7 +1919,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #cc83d3);
   background-image: -o-linear-gradient(left, #ffffff, #cc83d3);
   background-image: linear-gradient(to right, #ffffff, #cc83d3);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
@@ -1936,7 +1936,7 @@ label:first-letter {
   background-image: -webkit-linear-gradient(left, #ffffff, #743e3e);
   background-image: -o-linear-gradient(left, #ffffff, #743e3e);
   background-image: linear-gradient(to right, #ffffff, #743e3e);
-  font-size: 1.2rem;
+  font-size: 15px;
   -webkit-transition: font-size 0.5s;
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s;
