@@ -1185,6 +1185,9 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 .info__sect {
   font-family: "Neometric";
 }
+.info__wrapper {
+  margin-top: 100px;
+}
 
 .info__sect-text {
   font-size: 24px;
@@ -1253,7 +1256,7 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 ==========================*/
 
 .task__sect {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .task__wrapper-h {
