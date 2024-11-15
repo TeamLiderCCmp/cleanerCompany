@@ -622,6 +622,33 @@ header {
   z-index: 999;
 }
 
+.black-row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  transition: top 2s ease;
+  background: transparent !important;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+}
+
+.black-row.fixed {
+  position: fixed;
+  animation: top-down ease 1s;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes top-down {
+  0% {
+    top: -100px; /* Начало анимации - скрыт */
+  }
+  100% {
+    top: 0; /* Конец анимации - на экране */
+  }
+}
+
 .header-bgc {
   background: rgba(65, 68, 70, 0.28);
 }
@@ -640,7 +667,7 @@ header .navbar-nav {
 }
 
 .header-content {
-  background: #0e0e0e;
+  /* background: #0e0e0e; */
   height: 78px;
 }
 
@@ -1185,6 +1212,7 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 .info__sect {
   font-family: "Neometric";
 }
+
 .info__wrapper {
   margin-top: 100px;
 }
@@ -1257,7 +1285,6 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 
 .task__sect {
   margin-bottom: 100px;
-  font-family: "Neometric";
 }
 
 .task__wrapper-h {
@@ -1355,6 +1382,7 @@ label {
   padding-right: 30px;
   line-height: 50px;
   position: relative;
+  font-size: 12px;
 }
 
 label:hover {
