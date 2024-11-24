@@ -27,6 +27,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -2463,6 +2464,10 @@ footer {
   text-transform: uppercase;
 }
 
+.footer_link:hover {
+  color: #8aa9d6 !important;
+}
+
 .footer_text {
   text-align: center;
   font-size: 16px;
@@ -2490,6 +2495,12 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer_logo:hover {
+  width: 52px;
+  height: 52px;
 }
 
 .footer_line2 {

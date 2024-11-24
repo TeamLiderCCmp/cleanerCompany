@@ -36,19 +36,19 @@
   <body>
     <div class="mobile-navbar">
       <a href="#main">Главная</a>
-      <a href="">Услуги</a>
-      <a href="">Контакты</a>
-      <a href="">FAQ &amp; Помощь</a>
+      <a href="#rat">О нас</a>
+      <a href="#footer">Контакты</a>
+      <a href="#calc">Расчитать стоимость</a>
       <a class="mobile-btn">Заказать уборку</a>
       <a class="mobile-btn">Заказать звонок</a>
     </div>
-    <header id="main" class="black-row">
+    <header class="black-row">
       <div class="header-content">
         <div class="header-container container">
           <div class="header-left">
             <div class="header-logo">
               <img src="img/clean.svg" alt="" class="header-logo-main" />
-              <a href="#" class="fl ai-c logo">
+              <a href="#main" class="fl ai-c logo">
                 <span class="gradient">WashClean</span>
               </a>
             </div>
@@ -57,11 +57,11 @@
                 <a href="#main" class="underline-one"> Главная </a>
               </li>
               <li class="header-nav__link">
-                <a href="#" class="underline-one"> Услуги </a>
+                <a href="#rat" class="underline-one"> О нас </a>
               </li>
 
               <li class="header-nav__link">
-                <a href="#contact" class="underline-one">Контакты</a>
+                <a href="#footer" class="underline-one">Контакты</a>
               </li>
               <li class="header-nav__link gradient">
                 <svg
@@ -92,7 +92,7 @@
                     ></path>
                   </g>
                 </svg>
-                <a href="/faq" class="underline-one">Расчитать стоимость</a>
+                <a href="#calc" class="underline-one">Расчитать стоимость</a>
               </li>
             </ul>
           </div>
@@ -109,7 +109,7 @@
         </div>
       </div>
     </header>
-    <section class="main__section">
+    <section id="main" class="main__section">
       <div class="main_bg">
         <div class="container">
           <div class="main_wrapper">
@@ -201,7 +201,7 @@
         </div>
       </div>
     </section>
-    <section class="info__sect">
+    <section id="rat" class="info__sect">
       <div class="container">
         <div class="info__wrapper">
           <div class="info__sect-text">
@@ -591,7 +591,7 @@
         </div>
       </div>
     </section>
-    <section class="calc__sect">
+    <section id="calc" class="calc__sect">
       <div class="container">
         <div class="calc__sect-wrapper">
           <div class="calc__sect-left">
@@ -714,7 +714,7 @@
             </div>
           </div>
 
-          <div class="calc__sect-right">
+          <div id="contact" class="calc__sect-right">
             <h1>Обратная связь</h1>
             <div class="calc__sect-allright">
               <div class="form">
@@ -912,50 +912,9 @@
             <a class="comm__link" href="">ПЕРЕЙТИ</a>
           </div>
         </div>
-
-        <!-- <div class="comm__wrapper">
-          <div class="comm__pall">
-            <div class="comm__peop">
-              <div class="comm__img">
-                <img src="img/Roma.jpg" alt="">
-              </div>
-              <div class="comm__text">
-                <h4>Холявский Роман</h4>
-                <span>Тимлид проекта</span>
-              </div>
-            </div>
-            <div class="comm__peop">
-              <div class="comm__img">
-                <img src="img/Roma.jpg" alt="">
-              </div>
-              <div class="comm__text">
-                <h4>Холявский Роман</h4>
-                <span>Тимлид проекта</span>
-              </div>
-            </div>
-            <div class="comm__peop">
-              <div class="comm__img">
-                <img src="img/Roma.jpg" alt="">
-              </div>
-              <div class="comm__text">
-                <h4>Холявский Роман</h4>
-                <span>Тимлид проекта</span>
-              </div>
-            </div>
-            <div class="comm__peop">
-              <div class="comm__img">
-                <img src="img/Roma.jpg" alt="">
-              </div>
-              <div class="comm__text">
-                <h4>Холявский Роман</h4>
-                <span>Тимлид проекта</span>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="footer_content">
           <img src="img/clean.svg" alt="" class="footer_mainlogo" />
