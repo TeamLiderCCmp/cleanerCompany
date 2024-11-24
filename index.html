@@ -35,14 +35,14 @@
   </head>
   <body>
     <div class="mobile-navbar">
-      <a href="">Главная</a>
+      <a href="#main">Главная</a>
       <a href="">Услуги</a>
       <a href="">Контакты</a>
       <a href="">FAQ &amp; Помощь</a>
       <a class="mobile-btn">Заказать уборку</a>
       <a class="mobile-btn">Заказать звонок</a>
     </div>
-    <header class="black-row">
+    <header id="main" class="black-row">
       <div class="header-content">
         <div class="header-container container">
           <div class="header-left">
@@ -54,14 +54,14 @@
             </div>
             <ul class="header-nav">
               <li class="header-nav__link" style="display: none">
-                <a href="/" class="underline-one"> Главная </a>
+                <a href="#main" class="underline-one"> Главная </a>
               </li>
               <li class="header-nav__link">
-                <a href="/catalog" class="underline-one"> Услуги </a>
+                <a href="#" class="underline-one"> Услуги </a>
               </li>
 
               <li class="header-nav__link">
-                <a href="/warranty" class="underline-one">Контакты</a>
+                <a href="#contact" class="underline-one">Контакты</a>
               </li>
               <li class="header-nav__link gradient">
                 <svg
@@ -716,29 +716,31 @@
 
           <div class="calc__sect-right">
             <h1>Обратная связь</h1>
-            <form class="form">
-              <p type="ФИО:">
-                <input
-                  class="calc__cont"
-                  type="text"
-                  placeholder="Введите полностью ФИО"
-                />
-              </p>
-              <p type="Почта:">
-                <input
-                  class="calc__cont"
-                  type="email"
-                  placeholder="Введите действующую почту"
-                />
-              </p>
-              <p type="Сообщение:">
-                <input
-                  class="calc__cont"
-                  type="text"
-                  placeholder="Ваш вопрос"
-                />
-              </p>
-              <button class="calc__btn">Отправить запрос</button>
+            <div class="calc__sect-allright">
+              <div class="form">
+                <p type="ФИО:">
+                  <input
+                    class="calc__cont"
+                    type="text"
+                    placeholder="Введите полностью ФИО"
+                  />
+                </p>
+                <p type="Почта:">
+                  <input
+                    class="calc__cont"
+                    type="email"
+                    placeholder="Введите действующую почту"
+                  />
+                </p>
+                <p type="Сообщение:">
+                  <input
+                    class="calc__cont"
+                    type="text"
+                    placeholder="Ваш вопрос"
+                  />
+                </p>
+                <button class="calc__btn">Отправить запрос</button>
+              </div>
               <div class="contacts">
                 <div class="contacts-email">
                   <i class="fa-solid fa-phone-volume"></i>
@@ -749,7 +751,7 @@
                   <span>contact@washclean.com</span>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
