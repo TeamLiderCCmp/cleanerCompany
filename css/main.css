@@ -1318,7 +1318,6 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 }
 
 .task__wrapper-h {
-  margin-top: 100px;
   text-align: center;
   font-size: 40px;
   margin-bottom: 40px;
@@ -2057,6 +2056,13 @@ blockquote {
   margin-bottom: 40px;
 }
 
+.calc__sect-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .col {
   float: left;
   position: relative;
@@ -2123,8 +2129,6 @@ input[type="email"] {
 }
 
 .calc__total {
-  bottom: -34px;
-  right: -20px;
   background: #50505a;
   color: #fff;
   width: 320px;
@@ -2158,7 +2162,6 @@ input[type="email"] {
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  position: relative;
 }
 
 .calc__cont {
@@ -2197,19 +2200,29 @@ input[type="email"] {
   border: 2px solid #78788c;
   border-radius: 8px;
   background: 0;
-  color: #5a5a6e;
+  color: white;
   cursor: pointer;
   transition: all 0.3s;
+  animation: blinkBackground 3s infinite;
 }
+
+@keyframes blinkBackground {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #5a5a6e;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
 .calc__btn:hover {
   background: #78788c;
   color: #fff;
 }
 .contacts {
-  position: absolute;
-  text-align: center;
-  bottom: -34px;
-  right: -20px;
   background: #50505a;
   color: #fff;
   width: 320px;
@@ -2218,6 +2231,9 @@ input[type="email"] {
   border-radius: 6px;
   font-size: 16px;
   box-shadow: 10px 10px 40px -14px #000;
+  text-align: center;
+  transform: translate(0, -50%);
+  margin: auto;
 }
 
 .contacts-email i {
@@ -2335,8 +2351,7 @@ input[type="email"] {
 }
 
 .comm__row .comm__link {
-  width: 165px;
-  height: 55px;
+  padding: 20px 40px;
   background: linear-gradient(
     90deg,
     #0d61bc,
@@ -2613,6 +2628,7 @@ footer {
 }
 @media screen and (max-width: 1280px) {
   .container {
+    padding: 0 5px;
     width: 100%;
   }
 }
@@ -2707,8 +2723,32 @@ footer {
 }
 
 @media screen and (max-width: 1280px) {
+  .purp__wrapper h1 {
+    font-size: 28px;
+  }
+  .task__wrapper-h {
+    font-size: 28px;
+  }
+  .calc__sect-wrapper h1 {
+    font-size: 28px;
+  }
+  .comm__header {
+    font-size: 28px;
+  }
+  input[type="number"] {
+    font: 14px "Montserrat", sans-serif;
+  }
+  input[type="text"] {
+    font: 14px "Montserrat", sans-serif;
+  }
+  input[type="email"] {
+    font: 14px "Montserrat", sans-serif;
+  }
+  .task__sect {
+    margin-bottom: 50px;
+  }
   .purp__sect-text p {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .purp__sect-text img {
@@ -2756,13 +2796,14 @@ footer {
 
   .calc__all {
     flex-wrap: wrap;
-    width: 400px;
   }
 
   .calc__total {
     transform: translate(0, -50%);
   }
-
+  .contacts {
+    transform: translate(0, -50%);
+  }
   .calc__sect-left {
     display: flex;
     flex-direction: column;
@@ -2791,10 +2832,6 @@ footer {
 
   .calc__sect-wrapper {
     flex-direction: column;
-  }
-
-  .contacts {
-    right: 33px;
   }
 }
 
@@ -2867,5 +2904,23 @@ footer {
     #right-zone {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .comm__row .comm__row-title {
+    font-size: 20px;
+  }
+  .comm__row .comm__desc-text,
+  .comm__status .com__status-text {
+    font-size: 14px;
+  }
+  .comm__row .comm__link {
+    font-size: 15px;
+    padding: 15px 30px;
+  }
+  .comm__row .comm__image {
+    width: 180px;
+    height: 180px;
   }
 }
