@@ -1288,7 +1288,7 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 }
 
 .purp__sect-text img {
-  width: 235px;
+  width: 165px;
   margin: 15px;
   border-radius: 20px;
 }
@@ -1306,7 +1306,7 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
   border-left: 2px solid rgb(165 165 165);
   height: 100px;
   position: absolute;
-  left: 78%;
+  left: 83%;
   margin-left: -3px;
 }
 
@@ -1393,14 +1393,14 @@ h2 {
 }
 
 label {
-  display: flex; /* Включаем flexbox для метки */
-  align-items: center; /* Выравниваем текст по вертикали по центру */
-  justify-content: flex-start; /* Выравниваем текст по левому краю */
-  height: 50px; /* Высота label */
-  padding-left: 20px; /* Отступ слева */
-  line-height: 50px; /* Выравнивание по высоте, если необходимо */
-  font-size: 20px; /* Размер шрифта */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
   opacity: 0.5;
+  text-shadow: 1px 1px 1px black;
 }
 
 label:hover {
@@ -1976,7 +1976,7 @@ blockquote {
 }
 
 .carousel-control > .arrow.left {
-  transform: translateY(-50%) rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .carousel-control > .arrow.right {
@@ -2125,7 +2125,7 @@ input[type="email"] {
   display: flex;
   background: #0e0f12c7;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #ffffff;
+  box-shadow: 0 0 25px -10px #ffffff;
   padding: 50px 30px;
 }
 
@@ -2158,7 +2158,7 @@ input[type="email"] {
   height: 400px;
   background: #0e0f12c7;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #ffffff;
+  box-shadow: 0 0 25px -10px #ffffff;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
@@ -2274,7 +2274,7 @@ input[type="email"] {
 .comm__row {
   width: 100%;
   max-width: 310px;
-  box-shadow: 0 0 40px -10px #ffffff;
+  box-shadow: 0 0 25px -10px #ffffff;
   background: radial-gradient(circle, #181a1fc7, #0e0f12c7 100%);
   display: flex;
   flex-direction: column;
@@ -2628,7 +2628,7 @@ footer {
 
 @media (min-width: 639px) {
   .d-flex {
-    flex-direction: row; /* При ширине экрана больше 638px элементы будут в строку */
+    flex-direction: row;
   }
 }
 
