@@ -1,6 +1,6 @@
 /*==========================
-          GLOBAL
-==========================*/
+            GLOBAL
+  ==========================*/
 *,
 *::before,
 *::after {
@@ -201,8 +201,8 @@ input:disabled {
 }
 
 /*==========================
-       MODAL WINDOW
-==========================*/
+          MODAL WINDOW
+    ==========================*/
 
 .modal-wrapper {
   position: fixed;
@@ -608,8 +608,8 @@ input:disabled {
 }
 
 /*==========================
-          HEADER
-==========================*/
+              HEADER
+    ==========================*/
 
 header {
   position: relative;
@@ -914,8 +914,8 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 }
 
 /*==========================
-          MAIN
-==========================*/
+              MAIN
+    ==========================*/
 
 .main_bg {
   font-family: "Montserrat";
@@ -1311,8 +1311,8 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 }
 
 /*==========================
-          TASK
-==========================*/
+              TASK
+    ==========================*/
 
 .task__sect {
   margin-bottom: 100px;
@@ -1619,7 +1619,7 @@ input:checked ~ .content-test {
 }
 
 .content_testimonial-7 h1 {
-  color: #095239;
+  color: #07b479;
 }
 
 .content_testimonial-8 .picto {
@@ -1647,7 +1647,7 @@ input:checked ~ .content-test {
 }
 
 .content_testimonial-9 h1 {
-  color: #743e3e;
+  color: #ff743a;
 }
 
 .content-test h1:first-letter {
@@ -1691,8 +1691,8 @@ input:checked ~ label.label_testimonial-6 {
 }
 
 input:checked ~ label.label_testimonial-7 {
-  color: #095239;
-  border-right: solid 4px #095239;
+  color: #07b479;
+  border-right: solid 4px #07b479;
 }
 
 input:checked ~ label.label_testimonial-8 {
@@ -1701,8 +1701,8 @@ input:checked ~ label.label_testimonial-8 {
 }
 
 input:checked ~ label.label_testimonial-9 {
-  color: #743e3e;
-  border-right: solid 4px #743e3e;
+  color: #ff743a;
+  border-right: solid 4px #ff743a;
 }
 
 label:first-letter {
@@ -1868,8 +1868,8 @@ p.testimonialFrom {
 /* ============== End Testimonial Flexbox ============= */
 
 /*==========================
-          AUDIT
-==========================*/
+              AUDIT
+    ==========================*/
 .carousel {
   position: relative;
   padding: 90px 0;
@@ -2037,8 +2037,8 @@ blockquote {
 }
 
 /*==========================
-          Calc
-==========================*/
+              Calc
+    ==========================*/
 
 .calc__sect {
   margin-top: 100px;
@@ -2256,8 +2256,8 @@ input[type="email"] {
 }
 
 /*==========================
-          COMMAND
-==========================*/
+              COMMAND
+    ==========================*/
 
 .comm__sect {
   margin-bottom: 100px;
@@ -2717,11 +2717,11 @@ footer {
   }
 
   /* .main__information_title {
-    font-size: 18px;
-  }
-  .main__information_subtitle {
-    font-size: 16px;
-  } */
+        font-size: 18px;
+      }
+      .main__information_subtitle {
+        font-size: 16px;
+      } */
 }
 
 @media screen and (max-width: 1280px) {

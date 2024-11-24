@@ -1,11 +1,9 @@
-// Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
 var testimonialItems = document.querySelectorAll(".item label");
 var timer;
 function cycleTestimonials(index) {
   timer = setTimeout(function () {
     var evt;
     if (document.createEvent) {
-      //If browser = IE, then polyfill
       evt = document.createEvent("MouseEvent");
       evt.initMouseEvent(
         "click",
@@ -25,7 +23,6 @@ function cycleTestimonials(index) {
         null
       );
     } else {
-      //If Browser = modern, then create new MouseEvent
       evt = new MouseEvent("click", {
         view: window,
         bubbles: true,
@@ -36,17 +33,16 @@ function cycleTestimonials(index) {
     var ele = "." + testimonialItems[index].className;
     var ele2 = document.querySelector(ele);
     ele2.dispatchEvent(evt);
-    index++; // Increment the index
+    index++;
     if (index >= testimonialItems.length) {
-      index = 0; // Set it back to `0` when it reaches `3`
+      index = 0;
     }
-    cycleTestimonials(index); // recursively call `cycleTestimonials()`
+    cycleTestimonials(index);
     document
       .querySelector(".testimonials")
       .addEventListener("click", function () {
-        clearTimeout(timer); //stop the carousel when someone clicks on the div
+        clearTimeout(timer);
       });
-  }, 2000); //adjust scroll speed in miliseconds
+  }, 3500);
 }
-//run the function
 cycleTestimonials(0);
