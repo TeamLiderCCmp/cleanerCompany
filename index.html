@@ -20,49 +20,34 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/carusel.js"></script>
+    <script src="js/caruselv1.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
+    <div class="mobile-navbar">
+      <a href="">Главная</a>
+      <a href="">Услуги</a>
+      <a href="">Контакты</a>
+      <a href="">FAQ &amp; Помощь</a>
+      <a class="mobile-btn">Заказать уборку</a>
+      <a class="mobile-btn">Заказать звонок</a>
+    </div>
     <header class="black-row">
       <div class="header-content">
         <div class="header-container container">
           <div class="header-left">
-            <div class="header-burger" style="display: none">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="3"
-                  y="6"
-                  width="26"
-                  height="3"
-                  rx="1.5"
-                  fill="white"
-                ></rect>
-                <rect
-                  x="3"
-                  y="15"
-                  width="26"
-                  height="3"
-                  rx="1.5"
-                  fill="white"
-                ></rect>
-                <rect
-                  x="3"
-                  y="24"
-                  width="26"
-                  height="3"
-                  rx="1.5"
-                  fill="white"
-                ></rect>
-              </svg>
-            </div>
             <div class="header-logo">
+              <img src="img/clean.svg" alt="" class="header-logo-main" />
               <a href="#" class="fl ai-c logo">
                 <span class="gradient">WashClean</span>
               </a>
@@ -114,16 +99,13 @@
           <div class="header-right">
             <a class="header-right-btn">Заказать уборку</a>
             <a>Заказать звонок</a>
-            <!-- <a href="">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://t.me/syncValorant">
-              <i class="fa-brands fa-telegram"></i>
-            </a>
-            <a href="https://discord.gg/WQasn2g3JU">
-              <i class="fa-brands fa-discord"></i>
-            </a> -->
           </div>
+          <label for="check" class="mobile-menu">
+            <input type="checkbox" id="check" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
       </div>
     </header>
@@ -133,34 +115,36 @@
           <div class="main_wrapper">
             <div class="d-flex">
               <div class="main_bg-left">
-                <a class="main__link" href="#" target="_blank">
-                  <div class="main__discord_wrapper">
-                    <svg
-                      class="footer__image"
-                      width="24"
-                      height="23"
-                      viewBox="0 0 24 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="footer__link"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.23244 10.4007C9.06328 8.14981 12.2792 6.65417 13.8941 5.92856C18.4903 3.87021 19.4565 3.51481 20.0776 3.5C20.2156 3.5 20.5193 3.52962 20.7263 3.70732C20.892 3.8554 20.9334 4.04791 20.961 4.19599C20.9886 4.34407 21.0162 4.65505 20.9886 4.89198C20.7401 7.70556 19.6635 14.5322 19.1114 17.6715C18.8768 19.0043 18.4213 19.4485 17.9796 19.493C17.0135 19.5818 16.2819 18.8118 15.3572 18.1602C13.8941 17.1384 13.0798 16.5017 11.6581 15.4947C10.0156 14.3397 11.0784 13.7029 12.017 12.6663C12.2654 12.3998 16.5028 8.25347 16.5856 7.88326C16.5994 7.83883 16.5994 7.66113 16.5028 7.57228C16.4062 7.48343 16.2681 7.51305 16.1577 7.54267C16.0059 7.57228 13.6871 9.23081 9.1737 12.5034C8.51118 12.9921 7.91768 13.2291 7.37939 13.2142C6.78588 13.1994 5.65409 12.8588 4.79834 12.5627C3.76315 12.2073 2.93501 12.0148 3.00402 11.3928C3.04543 11.067 3.4595 10.7413 4.23244 10.4007Z"
-                        fill="#C2C6D7"
-                      ></path>
-                    </svg>
-                    <div class="main__discord">
-                      Присоединяйтесь к нашему Telegram чату
+                <div class="main__liti">
+                  <a class="main__link" href="#" target="_blank">
+                    <div class="main__discord_wrapper">
+                      <svg
+                        class="footer__image"
+                        width="24"
+                        height="23"
+                        viewBox="0 0 24 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="footer__link"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.23244 10.4007C9.06328 8.14981 12.2792 6.65417 13.8941 5.92856C18.4903 3.87021 19.4565 3.51481 20.0776 3.5C20.2156 3.5 20.5193 3.52962 20.7263 3.70732C20.892 3.8554 20.9334 4.04791 20.961 4.19599C20.9886 4.34407 21.0162 4.65505 20.9886 4.89198C20.7401 7.70556 19.6635 14.5322 19.1114 17.6715C18.8768 19.0043 18.4213 19.4485 17.9796 19.493C17.0135 19.5818 16.2819 18.8118 15.3572 18.1602C13.8941 17.1384 13.0798 16.5017 11.6581 15.4947C10.0156 14.3397 11.0784 13.7029 12.017 12.6663C12.2654 12.3998 16.5028 8.25347 16.5856 7.88326C16.5994 7.83883 16.5994 7.66113 16.5028 7.57228C16.4062 7.48343 16.2681 7.51305 16.1577 7.54267C16.0059 7.57228 13.6871 9.23081 9.1737 12.5034C8.51118 12.9921 7.91768 13.2291 7.37939 13.2142C6.78588 13.1994 5.65409 12.8588 4.79834 12.5627C3.76315 12.2073 2.93501 12.0148 3.00402 11.3928C3.04543 11.067 3.4595 10.7413 4.23244 10.4007Z"
+                          fill="#C2C6D7"
+                        ></path>
+                      </svg>
+                      <div class="main__discord">
+                        Присоединяйтесь к нашему Telegram чату
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
 
-                <p class="main__title">
-                  <span class="main__title_color">Лучший сервис</span> в городе
-                  Донецк
-                </p>
+                  <p class="main__title">
+                    <span class="main__title_color">Лучший сервис</span><br />в
+                    городе Донецк
+                  </p>
+                </div>
                 <p class="main__subtitle">
                   Большой каталог качественных услуг по клинингу,
                   предоставляемых опытными специалистами, которые сделают ваше
@@ -169,7 +153,7 @@
                 <h1>Клининг – залог качества и экономии!</h1>
 
                 <div
-                  class="d-xl-flex"
+                  class="main__search"
                   style="margin-top: 25px; max-width: calc(100% - 40px)"
                 >
                   <a class="main__link" href="/catalog">
@@ -177,8 +161,7 @@
                   </a>
 
                   <button class="main__button_search searchBtn" data-lang="ru">
-                    <img src="img/search.svg" />&nbsp;&nbsp;<span
-                      class="search"
+                    <img src="img/search.svg" />&nbsp;&nbsp;<span class="search"
                       >Поиск</span
                     >
                   </button>
@@ -225,7 +208,7 @@
             <h1 class="info__sect-h">О нас</h1>
             <div class="info__sect-det">
               <p>
-                <span style="color: rgb(47, 171, 219)">WashClean</span>
+                <span>WashClean</span>
                 — это клининговая компания нового поколения, для которой чистота
                 — не просто работа, а призвание. Мы предлагаем полный спектр
                 услуг по уборке и уходу за жилыми, офисными и промышленными
@@ -242,10 +225,9 @@
                 нам учитывать все пожелания клиента, а гибкая система работы и
                 разнообразие пакетов услуг делает нас доступными для любого
                 бюджета. <br /><br />
-                <span style="color: rgb(47, 171, 219)">WashClean</span> — это
-                надёжность, качество и внимание к деталям, чтобы вы могли
-                наслаждаться чистотой и уютом каждый день, доверяя нам заботу о
-                вашем пространстве.
+                <span>WashClean</span> — это надёжность, качество и внимание к
+                деталям, чтобы вы могли наслаждаться чистотой и уютом каждый
+                день, доверяя нам заботу о вашем пространстве.
               </p>
             </div>
           </div>
@@ -480,5 +462,549 @@
         </div>
       </div>
     </section>
+    <section class="audit__sect">
+      <div class="container">
+        <div class="audit__wrapper">
+          <div class="audit__wrapper-text">
+            <h1 class="task__wrapper-h">Целевая аудитория</h1>
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="container-car">
+                    <img src="img/cel1.jpg" alt="Image 1" />
+                    <blockquote>
+                      Семейные домовладельцы, которым требуется регулярная
+                      уборка и поддержание чистоты в их жилых помещениях.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel2.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Владельцы квартир, которые хотят арендовать свою
+                      недвижимость и нуждаются в профессиональной уборке перед
+                      заселением новых жильцов.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel3.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Офисные менеджеры и администраторы, которые ищут надежного
+                      партнера для регулярной уборки и поддержания чистоты в
+                      офисных помещениях.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel4.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Владельцы ресторанов и кафе, которые нуждаются в
+                      высококачественных услугах клининга для поддержания
+                      гигиены и безопасности пищевого сервиса.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel5.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Хозяева гостиниц и отелей, которым требуется регулярная
+                      уборка номеров и общественных помещений для обеспечения
+                      комфорта и удовлетворения гостей
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel6.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Владельцы магазинов и розничных точек, которые ищут
+                      профессиональные услуги клининга для поддержания чистоты и
+                      привлекательности своего бизнеса.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel7.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Медицинские учреждения, такие как клиники и
+                      стоматологические кабинеты, которым требуется
+                      специализированная уборка и дезинфекция для обеспечения
+                      чистоты и безопасности пациентов.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel8.jpg" alt="Image 1" />
+
+                    <blockquote>
+                      Хозяева загородных домов и коттеджей, которые нуждаются в
+                      регулярной уборке и обслуживании своей недвижимости вдали
+                      от городской суеты.
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="container-car">
+                    <img src="img/cel9.jpg.png" alt="Image 1" />
+
+                    <blockquote>
+                      Организаторы мероприятий и конференций, которые требуют
+                      профессиональных услуг клининга для подготовки помещений
+                      перед и после мероприятий.
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-control left">
+                <div class="arrow left"></div>
+              </div>
+              <div class="carousel-control right">
+                <div class="arrow right"></div>
+              </div>
+              <ol class="carousel-indicators">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calc__sect">
+      <div class="container">
+        <div class="calc__sect-wrapper">
+          <div class="calc__sect-left">
+            <h1>Расчитать стоимость услуг</h1>
+            <div class="calc__all">
+              <div class="calc__left">
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Стандартная уборка квартир/домов</p>
+                    <input
+                      type="number"
+                      class="effect"
+                      id="standardApartment"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Генеральная уборка квартир/домов</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="deepApartment"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Стандартная уборка офисов</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="standardOffice"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Генеральная уборка офисов</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="deepOffice"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="calc__right">
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Мойка окон одноэтажных зданий</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="windowSingle"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Мойка окон многоэтажных зданий</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="windowMulti"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Химчистка ковровых изделий</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="carpetCleaning"
+                      placeholder="Введите значение м²"
+                    />
+
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+                <div class="calc__sect-calc">
+                  <div class="col">
+                    <p class="input-text">Химчистка мягкой мебели</p>
+
+                    <input
+                      type="number"
+                      class="effect"
+                      id="furnitureCleaning"
+                      placeholder="Введите значение м²"
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc__total">
+              <h3>
+                Сумма стоимости услуги: <br />
+                <span id="totalCost">0</span> рублей
+              </h3>
+            </div>
+          </div>
+
+          <div class="calc__sect-right">
+            <h1>Обратная связь</h1>
+            <form class="form">
+              <p type="ФИО:">
+                <input
+                  class="calc__cont"
+                  type="text"
+                  placeholder="Введите полностью ФИО"
+                />
+              </p>
+              <p type="Почта:">
+                <input
+                  class="calc__cont"
+                  type="email"
+                  placeholder="Введите действующую почту"
+                />
+              </p>
+              <p type="Сообщение:">
+                <input
+                  class="calc__cont"
+                  type="text"
+                  placeholder="Ваш вопрос"
+                />
+              </p>
+              <button class="calc__btn">Отправить запрос</button>
+              <div class="contacts">
+                <div class="contacts-email">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <span>+7 (949) 777 01 01</span>
+                </div>
+                <div class="contacts-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>contact@washclean.com</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comm__sect">
+      <div class="container">
+        <div class="comm__header">
+          <h1>Команда проекта</h1>
+        </div>
+        <div class="comm__cards">
+          <div class="comm__row">
+            <a href=""
+              ><img
+                alt="image"
+                loading="lazy"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="1"
+                class="comm__image"
+                src="img/Roma.jpg"
+                style="color: transparent"
+            /></a>
+            <p class="comm__row-title">Холявский Роман</p>
+            <div class="comm__line"></div>
+            <div class="comm__desc">
+              <img
+                alt="game"
+                loading="lazy"
+                width="25"
+                height="25"
+                decoding="async"
+                data-nimg="1"
+                src="img/king.png"
+              />
+              <p class="comm__desc-text">Тимлидер</p>
+            </div>
+            <button class="comm__info">
+              <div class="comm__status">
+                <div class="comm__status-ud"></div>
+                <p class="com__status-text" style="color: rgb(108, 238, 176)">
+                  Актуально
+                </p>
+              </div>
+            </button>
+            <a class="comm__link" href="">ПЕРЕЙТИ</a>
+            <div class="comm__hot">Многозадачный</div>
+          </div>
+          <div class="comm__row">
+            <a href=""
+              ><img
+                alt="image"
+                loading="lazy"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="1"
+                class="comm__image"
+                src="img/Victor.jpg"
+                style="color: transparent"
+            /></a>
+            <p class="comm__row-title">Миляев Виктор</p>
+            <div class="comm__line"></div>
+            <div class="comm__desc">
+              <img
+                alt="game"
+                loading="lazy"
+                width="25"
+                height="25"
+                decoding="async"
+                data-nimg="1"
+                src="img/code.png"
+              />
+              <p class="comm__desc-text">Frontend разработчик</p>
+            </div>
+            <button class="comm__info">
+              <div class="comm__status">
+                <div class="comm__status-ud"></div>
+                <p class="com__status-text" style="color: rgb(108, 238, 176)">
+                  Актуально
+                </p>
+              </div>
+            </button>
+            <a class="comm__link" href="">ПЕРЕЙТИ</a>
+          </div>
+          <div class="comm__row">
+            <a href=""
+              ><img
+                alt="image"
+                loading="lazy"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="1"
+                class="comm__image"
+                src="img/Andrey.jpg"
+                style="color: transparent"
+            /></a>
+            <p class="comm__row-title">Гадецкий Андрей</p>
+            <div class="comm__line"></div>
+            <div class="comm__desc">
+              <img
+                alt="game"
+                loading="lazy"
+                width="25"
+                height="25"
+                decoding="async"
+                data-nimg="1"
+                src="img/code.png"
+              />
+              <p class="comm__desc-text">Frontend разработчик</p>
+            </div>
+            <button class="comm__info">
+              <div class="comm__status">
+                <div class="comm__status-ud"></div>
+                <p class="com__status-text" style="color: rgb(108, 238, 176)">
+                  Актуально
+                </p>
+              </div>
+            </button>
+            <a class="comm__link" href="">ПЕРЕЙТИ</a>
+          </div>
+          <div class="comm__row">
+            <a href=""
+              ><img
+                alt="image"
+                loading="lazy"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="1"
+                class="comm__image"
+                src="img/Sasha.jpg"
+                style="color: transparent"
+            /></a>
+            <p class="comm__row-title">Сироштан Александр</p>
+            <div class="comm__line"></div>
+            <div class="comm__desc">
+              <img
+                alt="game"
+                loading="lazy"
+                width="25"
+                height="25"
+                decoding="async"
+                data-nimg="1"
+                src="img/write-svgrepo-com.png"
+              />
+              <p class="comm__desc-text">Копирайтер</p>
+            </div>
+            <button class="comm__info">
+              <div class="comm__status">
+                <div class="comm__status-ud"></div>
+                <p class="com__status-text" style="color: rgb(108, 238, 176)">
+                  Актуально
+                </p>
+              </div>
+            </button>
+            <a class="comm__link" href="">ПЕРЕЙТИ</a>
+          </div>
+        </div>
+
+        <!-- <div class="comm__wrapper">
+          <div class="comm__pall">
+            <div class="comm__peop">
+              <div class="comm__img">
+                <img src="img/Roma.jpg" alt="">
+              </div>
+              <div class="comm__text">
+                <h4>Холявский Роман</h4>
+                <span>Тимлид проекта</span>
+              </div>
+            </div>
+            <div class="comm__peop">
+              <div class="comm__img">
+                <img src="img/Roma.jpg" alt="">
+              </div>
+              <div class="comm__text">
+                <h4>Холявский Роман</h4>
+                <span>Тимлид проекта</span>
+              </div>
+            </div>
+            <div class="comm__peop">
+              <div class="comm__img">
+                <img src="img/Roma.jpg" alt="">
+              </div>
+              <div class="comm__text">
+                <h4>Холявский Роман</h4>
+                <span>Тимлид проекта</span>
+              </div>
+            </div>
+            <div class="comm__peop">
+              <div class="comm__img">
+                <img src="img/Roma.jpg" alt="">
+              </div>
+              <div class="comm__text">
+                <h4>Холявский Роман</h4>
+                <span>Тимлид проекта</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer_content">
+          <img src="img/clean.svg" alt="" class="footer_mainlogo" />
+          <div class="footer_line"></div>
+          <div class="footer_container">
+            <a href="#" class="footer_link">Главная</a>
+            <a href="#" class="footer_link">Каталог</a>
+            <a href="#" class="footer_link">FAQ</a>
+          </div>
+          <div class="footer_line"></div>
+          <div class="footer_container">
+            <a href="#" class="footer_link">Соглашение</a>
+            <a href="#" class="footer_link">Поддержка</a>
+            <a href="#" class="footer_link">Контакты</a>
+          </div>
+          <div class="footer_line"></div>
+          <div class="footer_wrap">
+            <p class="footer_text">Наши Соц.Сети</p>
+            <div class="footer_wrapper">
+              <a href="" class="footer_logo">
+                <img src="img/telegram-svgrepo-com.svg" alt="" />
+              </a>
+              <a href="" class="footer_logo">
+                <img src="img/vk.svg" alt="" />
+              </a>
+              <a href="" class="footer_logo">
+                <img src="img/whatsapp.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_line2"></div>
+        <p class="footer_auth">
+          2024 © WASHCLEAN - ВСЕ ПРАВА ЗАЩИЩЕНЫ - РАЗРАБОТКА И ДИЗАЙН
+          WASHCLEAN.COM
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".col").forEach((col) => {
+        const input = col.querySelector("input");
+        const text = col.querySelector(".input-text");
+
+        input.addEventListener("focus", () => {
+          text.style.opacity = "1";
+        });
+
+        input.addEventListener("blur", () => {
+          text.style.opacity = "0.4";
+        });
+      });
+    </script>
   </body>
 </html>
