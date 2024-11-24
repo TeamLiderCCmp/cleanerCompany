@@ -1283,20 +1283,29 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
   padding-left: 35px;
   font-size: 30px;
   text-align: justify;
-  padding-right: 120px;
+  padding-right: 30px;
 }
 
 .purp__sect-text img {
-  width: 10%;
+  width: 235px;
   margin: 15px;
   border-radius: 20px;
+}
+
+@media (min-width: 1281px) {
+  .purp__sect-text p {
+    padding-left: 35px;
+    font-size: 30px;
+    text-align: justify;
+    padding-right: 100px;
+  }
 }
 
 .vl {
   border-left: 2px solid rgb(165 165 165);
   height: 100px;
   position: absolute;
-  left: 84%;
+  left: 78%;
   margin-left: -3px;
 }
 
@@ -1862,9 +1871,7 @@ p.testimonialFrom {
           AUDIT
 ==========================*/
 .carousel {
-  position: absolute;
-  width: 1400px;
-  height: 600px;
+  position: relative;
   padding: 90px 0;
   text-align: center;
   background: #0e0f12c7;
@@ -2034,7 +2041,7 @@ blockquote {
 ==========================*/
 
 .calc__sect {
-  margin-top: 740px;
+  margin-top: 100px;
   margin-bottom: 100px;
   font-family: "Montserrat", sans-serif;
 }
@@ -2487,6 +2494,7 @@ footer {
 }
 
 .mobile-menu {
+  align-items: normal;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2598,7 +2606,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 0px) {
   .container {
     padding: 0 15px;
   }
@@ -2701,14 +2709,13 @@ footer {
 @media screen and (max-width: 1280px) {
   .purp__sect-text p {
     font-size: 18px;
-    padding: 0 15px;
   }
 
   .purp__sect-text img {
-    width: 30%;
+    width: 25%;
   }
   .vl {
-    left: 64%;
+    left: 70%;
   }
   #flex-container {
     height: 1000px;
@@ -2724,11 +2731,6 @@ footer {
 }
 
 @media screen and (max-width: 1280px) {
-  .carousel {
-    width: 93%;
-    height: 500px;
-    margin-left: 35px;
-  }
   blockquote {
     margin: 0;
     padding: 20px 0;
@@ -2737,11 +2739,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .carousel {
-    margin-left: 35px;
-    width: 90%;
-    height: 500px;
-  }
   blockquote {
     font-size: 16px;
     margin: 10px 20px;
@@ -2750,7 +2747,7 @@ footer {
 
 @media screen and (max-width: 1280px) {
   .calc__sect {
-    margin-top: 690px;
+    margin-top: 50px;
   }
 
   .calc__sect-wrapper {
