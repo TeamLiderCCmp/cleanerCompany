@@ -44,11 +44,11 @@ cleanerCompany/
 
 ## 🎨 Скриншоты  
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <h1 align="center"> Главный экран </h1>
+    <h1 align="center"> 🖥️ Главный экран </h1>
   <p align="center">
    <img src="img/gl.png" alt="Главная страница" width="700">
      </p>
-   <p align="center"> Мобильная версия </p>
+   <h1 align="center"> 📱 Мобильная версия </h1>
    <p align="center"> 
   <img src="img/mobile.png" alt="Мобильная версия" width="300">
       </p>
