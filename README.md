@@ -44,7 +44,7 @@ cleanerCompany/
 
 ## 🎨 Скриншоты  
 <div style="display: flex; justify-content: center; gap: 20px;">
-    <p align="center" font-size="36px"> <span>Главный экран</span> </p>
+    <h1 align="center"> Главный экран </h1>
   <p align="center">
    <img src="img/gl.png" alt="Главная страница" width="700">
      </p>
