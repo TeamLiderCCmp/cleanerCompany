@@ -1204,7 +1204,8 @@ header .navbar-nav .contacts .btn-new-style.alt.outline:hover::before {
 @media screen and (min-width: 1360px) {
   .main_bg-right img {
     max-width: calc(100% + 20px);
-    display: block;
+    align-items: center;
+    display: flex;
     position: relative;
     overflow: hidden;
   }
@@ -2644,6 +2645,18 @@ footer {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .main_bg-right {
+    display: none;
+  }
+}
+@media screen and (min-width: 758px) {
+  .main_bg-right {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .container-car img {
     padding: 0 5px;
@@ -2666,9 +2679,6 @@ footer {
   .main__discord {
     font-size: 12px;
     line-height: 15px;
-  }
-  .main_bg-right {
-    display: none;
   }
 
   .main__search {
