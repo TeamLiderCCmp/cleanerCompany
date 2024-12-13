@@ -201,8 +201,8 @@
   }
   
   /*==========================
-          MODAL WINDOW
-    ==========================*/
+            MODAL WINDOW
+      ==========================*/
   
   .modal-wrapper {
     position: fixed;
@@ -608,8 +608,8 @@
   }
   
   /*==========================
-              HEADER
-    ==========================*/
+                HEADER
+      ==========================*/
   
   header {
     position: relative;
@@ -914,8 +914,8 @@
   }
   
   /*==========================
-              MAIN
-    ==========================*/
+                MAIN
+      ==========================*/
   
   .main_bg {
     font-family: "Montserrat";
@@ -1204,7 +1204,8 @@
   @media screen and (min-width: 1360px) {
     .main_bg-right img {
       max-width: calc(100% + 20px);
-      display: block;
+      align-items: center;
+      display: flex;
       position: relative;
       overflow: hidden;
     }
@@ -1305,14 +1306,13 @@
   .vl {
     border-left: 2px solid rgb(165 165 165);
     height: 100px;
-    position: absolute;
     left: 83%;
     margin-left: -3px;
   }
   
   /*==========================
-              TASK
-    ==========================*/
+                TASK
+      ==========================*/
   
   .task__sect {
     margin-bottom: 100px;
@@ -1868,8 +1868,8 @@
   /* ============== End Testimonial Flexbox ============= */
   
   /*==========================
-              AUDIT
-    ==========================*/
+                AUDIT
+      ==========================*/
   .carousel {
     position: relative;
     padding: 90px 0;
@@ -2037,8 +2037,8 @@
   }
   
   /*==========================
-              Calc
-    ==========================*/
+                Calc
+      ==========================*/
   
   .calc__sect {
     margin-top: 100px;
@@ -2256,8 +2256,8 @@
   }
   
   /*==========================
-              COMMAND
-    ==========================*/
+                COMMAND
+      ==========================*/
   
   .comm__sect {
     margin-bottom: 100px;
@@ -2644,6 +2644,18 @@
     }
   }
   
+  @media screen and (max-width: 690px) {
+    .main_bg-right {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 758px) {
+    .main_bg-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
   @media screen and (max-width: 1280px) {
     .container-car img {
       padding: 0 5px;
@@ -2666,9 +2678,6 @@
     .main__discord {
       font-size: 12px;
       line-height: 15px;
-    }
-    .main_bg-right {
-      display: none;
     }
   
     .main__search {
@@ -2717,11 +2726,11 @@
     }
   
     /* .main__information_title {
-        font-size: 18px;
-      }
-      .main__information_subtitle {
-        font-size: 16px;
-      } */
+          font-size: 18px;
+        }
+        .main__information_subtitle {
+          font-size: 16px;
+        } */
   }
   
   @media screen and (max-width: 1280px) {
@@ -2760,10 +2769,6 @@
     }
     .purp__sect-text p {
       font-size: 15px;
-    }
-  
-    .purp__sect-text img {
-      width: 25%;
     }
     .vl {
       left: 70%;
@@ -2917,6 +2922,11 @@
       }
     }
   }
+  @media screen and (max-width: 680px){
+    .purp__sect-text img{
+      width: 25%;
+    }
+  }
   
   @media screen and (max-width: 1280px) {
     .comm__row .comm__row-title {
@@ -2935,4 +2945,3 @@
       height: 180px;
     }
   }
-  
