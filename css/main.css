@@ -1305,6 +1305,7 @@
   
   .vl {
     border-left: 2px solid rgb(165 165 165);
+    position: absolute;
     height: 100px;
     left: 83%;
     margin-left: -3px;
